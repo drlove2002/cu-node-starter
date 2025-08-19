@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CU Node Starter</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>CU Node Starter</h1>
+        <h4 id="message"></h4>
+    </header>
+    <main>
+        <div id="app"></div>
+
+        <form id="sampleForm" action="/api/submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required />
+
+            <label for="from">Date Range:</label>
+            <div class="date-range">
+                <input type="date" id="from" name="from">
+                <span class="separator">→</span>
+                <input type="date" id="to" name="to">
+            </div>
+
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="result">
+            <div id="data-table"></div>
+        </div>
+    </main>
+
+    <script type="module" src="/js/main.js"></script>
+    <script src="/js/simple.js"></script>
+</body>
+
+</html>

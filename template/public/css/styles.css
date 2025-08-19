@@ -1,0 +1,178 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+    background: #f5f5f5;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+input:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px #007bff44;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(odd) {
+    background: #ededed;
+}
+
+tr:nth-child(even) {
+    background: #dbdbdb;
+}
+
+tr:hover {
+    background: #e6f2ff;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background: #007bff;
+    color: white;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.date-range {
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid #4a90e2;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+
+.date-range input[type="date"] {
+    border: none;
+    padding: 8px;
+    outline: none;
+}
+
+.date-range input[type="date"]:focus {
+    background-color: #f0f8ff;
+}
+
+.date-range .separator {
+    background: #4a90e2;
+    color: white;
+    padding: 0 6px;
+    font-weight: bold;
+}
