@@ -1,16 +1,7 @@
 {
-  "name": "cu-node-starter",
+  "name": "@graysolution/cu-node-starter",
   "version": "1.0.0",
   "description": "A minimal but powerful Node.js + Express + MySQL + TypeScript + Vite starter template",
-  "main": "index.js",
-  "bin": {
-    "cu-node-starter": "./index.js"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "npm run build-templates",
-    "build-templates": "echo \"Templates ready\""
-  },
   "keywords": [
     "nodejs",
     "express",
@@ -21,12 +12,30 @@
     "template",
     "boilerplate"
   ],
-  "author": "Sudip Roy",
+  "homepage": "https://github.com/drlove2002/cu-node-starter#readme",
+  "bugs": {
+    "url": "https://github.com/drlove2002/cu-node-starter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drlove2002/cu-node-starter.git"
+  },
   "license": "MIT",
+  "author": "Sudip Roy",
   "type": "module",
+  "main": "index.js",
+  "bin": {
+    "cu-node-starter": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build-templates",
+    "build-templates": "echo \"Templates ready\""
+  },
   "dependencies": {
     "chalk": "^5.6.0",
     "fs-extra": "^11.3.1",
     "inquirer": "^12.9.3"
-  }
+  },
+  "devDependencies": {}
 }
